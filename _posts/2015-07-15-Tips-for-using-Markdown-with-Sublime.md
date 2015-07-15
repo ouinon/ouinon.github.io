@@ -2,7 +2,7 @@
 layout: post
 title: "How to use Sublime to edit Markdown files!"
 date:   2015-07-07 15:56:03
-categories: jekyll update
+categories: sublime
 tags: [sublime, markdown, blogging]
 dqheader: Do you have any Sublime-Markdown tips you'd like to share? Cos I'd love to here them.
 ---
