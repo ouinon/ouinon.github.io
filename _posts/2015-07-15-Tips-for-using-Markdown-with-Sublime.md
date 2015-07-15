@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use Sublime to edit Markdown files!"
+title: "How to use Sublime Text to edit Markdown files"
 date:   2015-07-07 15:56:03
 categories: sublime
 tags: [sublime, markdown, blogging]
