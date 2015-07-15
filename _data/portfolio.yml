@@ -1,0 +1,51 @@
+- title: web.cv/RobStarbuck
+  url: http://web.cv/
+  description: > # For the past few months I've been working on my own start-up business.
+   Lot's has been learnt, it's honed my AngularJS skills no-end.
+
+- title: Stable Grid
+  url: http://starbuck451.github.io/stablegrid/
+  description: > # Bootstrap's cool but I don't using their 'floating' templates, I built
+   Stablegrid as a boilerplate to build web.cv, it relys upon angular-ui for some of it's
+   functionality.
+
+- title: Facebook - A Connected Life
+  url: https://aconnectedlife.info/de-en/
+  description: > # Built for facebook to explain it's use of personal data, the site is multilingual
+   and was principally built for consumption in Germany.
+
+- title: Ebay Inc. - Better Together
+  url: http://www.ebayinc.com/
+  urllegacy: http://www.thomaskemp.net/portfolio/ebay-inc-better-together/
+  description: > # Since taken down, this site was built to promote the link between Ebay and Paypal
+   which have since been chosen to separate. Built on a very tight deadline.
+
+- title: Barrick Beyond Borders
+  url: http://barrickbeyondborders.com/
+  description: > # Collaborated with Umbraco developers to put together Barrick Beyond Borders, it appears to
+   have undergone a few design changes since I worked on it.
+
+- title: Glass Closet
+  url: http://glasscloset.org/home
+  description: > #  Built on a very tight deadline. This is a promotional website for Edmund John Philip Browne,
+   the Baron Browne of Madingley to promote his book 'The Glass Closet'
+
+- title: Merchant Cantos
+  url: http://merchantcantos.com/
+  description: > #
+   I came in towards the end of this project to iron out some bugs.
+
+- title: Certificate of Popularity
+  url: http://fb.ouinon.co/popularity/
+  description: > # An experimental website built to allow me to experiment with the `canvas` element and web workers.
+   Using the `canvas` element allows the site to be rendered on mobile without the need for a plugin.
+
+- title: Y.CO - The Yacht Company
+  url: http://y.co/
+  description: > # 
+   My employer in France website, most of my work for the company was private solutions for clients only.
+
+- title: Employboy
+  url: http://employboy.com/
+  description: > # 
+   My portfolio website of yesteryear, despite it's datetedness I still quite like it.

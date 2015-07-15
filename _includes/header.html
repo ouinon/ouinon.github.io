@@ -1,0 +1,34 @@
+<header class="site-header">
+
+  <div class="o-cte">
+
+    <!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+
+    <nav class="cte WdB">
+  
+      <div onclick="javascript:homeClick(this)" id="logo-bar" class="Marginin m_C">
+        <div class="o-svg">
+          {% include logo-wide.svg %}
+        </div>
+        <nav>
+          <ul>
+            <a href="/about/">ABOUT</a>
+            <a href="/contact/">CONTACT</a>
+            <a href="/portfolio/">PORTFOLIO</a>
+          </ul>
+        </nav>
+      </div>
+
+<!--       <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div> -->
+
+    </nav>
+
+  </div>
+
+</header>

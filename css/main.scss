@@ -1,0 +1,378 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// INCLUDES A COLOR DEFINITION FOR $c_A
+// IT'S A BIT OF A HACK BUT I WANTED TO SEE IF IT WOULD WORK
+{% include sassinclude.scss %}
+$c_B:#005689;
+$c_C:#FFAA00;
+
+// BASE COLORS
+$DK0:#000000;
+$LT0:#FFFCF6;
+
+// CONTENT WIDTHS
+$wdA:480px;
+$wdB:768px;
+$wdC:992px;
+$wdD:1200px;
+
+// BREAK POINTS
+$cteWdA:600px;
+$cteWdB:640px;
+$cteWdC:1040px;
+
+// BUTTON HEIGHT
+$btnHt:5;
+// BUTTON HEIGHT BREAK POINT
+$btnHtSwitchWd:$wdB;
+// BROKEN BUTTON HEIGHT
+$btnHtB:7;
+
+// FONT INFORMATION
+
+// https://www.google.com/fonts#UsePlace:use/Collection:Neuton|Anonymous+Pro|Roboto+Condensed
+
+// font-family: 'Neuton', serif;
+// Neuton:200,300,400,700,800
+
+// font-family: 'Anonymous Pro', ;
+// Anonymous+Pro:400,700
+
+// font-family: 'Roboto Condensed', sans-serif;
+// Roboto+Condensed:400,700,300
+
+@import
+    "stable",
+    "syntax-highlighting"
+;
+
+body{
+	padding:8rem 0 0;
+	font-size:1.5rem;
+	line-height:2rem;
+}
+p{
+	line-height: 2.5rem;
+	em{
+		font-style: italic;
+	}
+}
+strong,b{
+	font-weight:bold;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 4rem;
+	line-height: 5rem;
+	font-weight:700;
+	margin-bottom: 2rem;
+	em{
+		font-size:2rem;
+		color:$c_C;
+	}
+}
+h3,h4{
+	font-weight:400;
+	font-size: 3rem;
+	line-height: 3.75rem;
+}
+h5,h6{
+	font-weight:400;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	display:block;
+}
+
+h1,h3{
+	border-bottom:1px solid black;
+}
+h1{
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+h3{
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+a{
+	color:$c_B;
+	box-shadow: inset 0px -1px 0px 0px $A-L4;
+	text-decoration: none;
+	transition: box-shadow 1s;
+    &:hover{
+	    transition: box-shadow 0s;
+	    box-shadow: inset 0px -1px 0px 0px $B-L8;
+    }
+}
+footer{
+	h2{
+		color: $DK4;
+	}
+	.tbl{
+		margin: 0 !important;
+	}
+	#footer-data{
+		color: $DK4;
+		a.btn:hover{
+			color: $DK8;
+		}
+		.btn{
+			color: $DK4;
+		}
+		svg path{
+			fill: $DK4;
+		}
+	}
+}
+form{
+	.o-input{
+		&.focus:hover:after,
+		&:hover:after{
+			background-color: $B-L8;
+		}
+
+		&.focus:after,
+		&:after{
+			background-color: $c_B;
+		}
+		&.Textarea{
+			background-color: $A-L1 !important;
+			textarea{
+				background-color: transparent;
+			}
+		}
+	}
+	.icn
+	{
+		.fa:first-child,
+		.fa{
+			opacity: 0;
+		}
+	}
+	&.Name-drt{&.Name-inv{.icn.Name{.fa{opacity: 0;}.fa:first-child{opacity: 1;}}}.icn.Name{.fa{opacity: 1;}.fa:first-child{opacity: 0;}}}
+	&.Email-drt{&.Email-inv{.icn.Email{.fa{opacity: 0;}.fa:first-child{opacity: 1;}}}.icn.Email{.fa{opacity: 1;}.fa:first-child{opacity: 0;}}}
+	&.Message-drt{&.Message-inv{.icn.Message{.fa{opacity: 0;}.fa:first-child{opacity: 1;}}}.icn.Message{.fa{opacity: 1;}.fa:first-child{opacity: 0;}}}
+	.ng-dirty{
+		.fa:first-child{
+			opacity: 1;
+		}	
+	}
+}
+input{
+	line-height: 2rem;
+	background-color: $A-L1 !important;
+}
+textarea{
+	padding: 1rem;
+	border:0;
+	min-height:20rem;
+	box-sizing:border-box;
+	width:100%;
+	&:focus{
+		outline: none;
+	}
+}
+blockquote{
+	padding-left:3rem;
+	background-color:$LT9;
+    outline: 1.5rem solid $LT9;
+    p{
+		margin-top:3rem;
+    	color: $LT7;
+		margin-bottom:3rem;
+    }
+}
+p,li{
+	code{
+	    background-color:$LT9;
+	    border-radius: 0.5rem;
+	    border-top: 0.25rem solid $LT9;
+	    border-bottom: 0.25rem solid $LT9;
+	    border-left: 0.5rem solid $LT9;
+	    border-right: 0.5rem solid $LT9;
+	    
+	}
+	strong code{
+		border-top: 0.25rem solid $DK7;
+		border-bottom: 0.25rem solid $DK7;
+		border-left: 0.5rem solid $DK7;
+		border-right: 0.5rem solid $DK7;
+		background-color:$DK7;
+		color:$LT0;	
+	}
+}
+ul{
+	li{
+		margin-bottom:1.5rem;
+	}
+	margin-bottom:2rem;
+}
+
+.nowrap{
+	white-space:nowrap;
+}
+.o-cte{
+    padding: 0 4rem;
+}
+
+.u_clear{
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+
+.cte{
+	position: relative;
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	img{
+		max-width:100%;
+	}
+}
+.cll a{
+	box-shadow: none !important;
+}
+.fin{
+	width:100%;
+	text-align:center;
+	font-size:4rem;
+	line-height:4rem;
+	margin-top:2rem;
+	margin-bottom:2rem;
+	text-transform:uppercase;
+	color:$LT9;
+}
+.post{
+	position: relative;
+	margin-bottom: 4rem;
+	&.Tags{
+		padding-bottom: 2rem;
+	}
+	h3,h4{
+		&:first-child{
+			margin-top:0;
+		}
+		margin-top:6rem;
+	}
+}
+.post-meta{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+ul.post-list li{
+	margin-bottom: 4rem;
+	a.post-link{
+		text-decoration: none;
+		color:$DK0;
+	    box-shadow: inset 0 -5px 0 0 $A-L4;
+	    transition: box-shadow 1s;
+	    &:hover{
+		    transition: box-shadow 0s;
+		    box-shadow: inset 0 -5px 0 0 $B-L8;
+	    }
+	}
+	position: relative;
+}
+.tag{
+	color:$c_B;
+	a{
+		box-shadow: inset 0px -5px 0px 0px $A-L4;
+	}
+}
+.tag-cte{
+	position: absolute;
+	bottom:0;
+	right:0;
+	margin:0;
+	text-transform: uppercase;
+	font-weight: bold;
+	a{
+		box-shadow: none;
+		&:hover{
+			box-shadow: inset 0px -1px 0px 0px $B-L8;
+		}
+	}
+	.fa{
+		color:$B-L4;
+	}
+}
+
+#logo-bar.m_C{
+	&.Marginin{
+		nav a{			
+			margin-left: 0%;
+			transition: margin 1000ms;
+		}
+	}
+}
+@media only screen and (max-width : $wdC) {
+	#logo-bar.m_C{
+		&.Marginin{
+			nav a{			
+				margin-left: -100%;
+			}
+		}
+	}
+}
+
+#bg-color{
+	background-color: $LT9;
+	color: $LT2;
+	min-width:400rem;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:-1.5rem;
+	z-index: -1;
+}
+#disqus_thread{
+	margin-bottom: 4rem;
+}
+#logo-bar{
+	height:120px;
+	margin-bottom: 2rem;
+	position: relative;
+	cursor:pointer;
+	.o-svg{
+		path{
+			fill:$c_A;
+			transition: fill 1s;
+		}
+		top:0;
+		left:0;
+		position: absolute;
+		margin-left: -1.5rem;
+	}
+	&:hover{
+		.o-svg{
+			path{
+				fill:$A-L8;
+				transition: fill 0s;
+			}
+		}
+	}
+	nav{
+		position: absolute;
+		top:1.5rem;
+		left:100%;
+		a{
+			// margin-left: -100%;
+			display: block;
+			color: white;
+			margin-bottom: 0.5rem;
+			// width: 400rem;
+			font-weight: bold;
+			box-shadow: none;
+		}
+	}
+}

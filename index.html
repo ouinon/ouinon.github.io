@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+    {% include post-assign.html %}
+    <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <p class="tag-cte">{{ tags_content }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+
+    <div class="o-tbl">
+        <div class="tbl Merge">
+            {% if paginator.previous_page %}
+
+                <!-- <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> -->
+        
+                <!-- <div class="cll">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn Fade- Icn">
+                        <label for="">Previous</label>
+                        <div class="icn">
+                            <i class="fa fa-square fs2r"></i>
+                            <i class="fa fa-square fs2r"></i>
+                        </div>
+                    </a>
+                </div> -->
+
+
+            {% else %}
+                <!-- <span>&laquo; Prev</span> -->
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                    <!-- <em>{{ page }}</em> -->
+
+                    <div class="cll wd4r">
+                        <button disabled class="btn Fade- Icn">
+                            <div class="icn">
+                                <i class="fa fa-square fs2r"></i>
+                                <i class="fa fa-square fs2r"></i>
+                                <span>{{page}}</span>
+                            </div>
+                        </button>
+                    </div>
+                {% elsif page == 1 %}
+                    <!-- <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a> -->
+                     
+                    <div class="cll wd4r">
+                        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" class="btn Fade- Icn">
+                            <div class="icn">
+                                <i class="fa fa-square fs2r"></i>
+                                <i class="fa fa-square fs2r"></i>
+                                <span>{{page}}</span>
+                            </div>
+                        </a>
+                    </div>   
+                    
+
+                {% else %}
+    <!--                 <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a> -->
+
+                    <div class="cll wd4r">
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="btn Fade- Icn">
+                            <div class="icn">
+                                <i class="fa fa-square fs2r"></i>
+                                <i class="fa fa-square fs2r"></i>
+                                <span>{{page}}</span>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+                <!-- <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> -->
+
+                <div class="cll">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn Fade- Icn clWhite">
+                        <label for="">Next</label>
+                        <div class="icn">
+                            <i class="fa fa-step-forward"></i>
+                            <!-- <i class="fa fa-square fs2r"></i> -->
+                        </div>
+                    </a>
+                </div>
+
+            {% else %}
+                <!-- <span>Next &raquo;</span> -->
+
+                <div class="cll">
+                    <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" class="btn Fade- Lft- Icn">
+                        <label for="">First Page</label>
+                        <div class="icn">
+                            <i class="fa fa-fast-backward"></i>
+                        </div>
+                    </a>
+                </div>
+
+            {% endif %}
+        </div>
+    </div>
+
+{% endif %}
+
+</div>

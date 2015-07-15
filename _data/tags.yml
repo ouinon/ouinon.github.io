@@ -1,0 +1,13 @@
+- slug: sublime
+  name: Sublime
+
+- slug: markdown
+  name: Markdown
+
+- slug: blogging
+  name: Blogging
+
+# - slug: javascript
+#   name: Javascript
+# You can use categories for tags to produce groupings
+#   category: general

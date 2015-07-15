@@ -1,0 +1,131 @@
+<footer class="o-cte">
+
+    <div class="cte WdB pdTB2r">
+
+        <div id="bg-color"></div>
+
+        {% if page.is_post %}
+
+            {% if page.dqheader != nil %}
+
+            <h2 class="mg0">{{ page.dqheader }}</h2>
+
+            {% else %}
+            
+            <h2 class="mg0">{{ page.title }}</h2>
+            
+            {% endif %}
+            
+            <h2 class="clWhite">Your Comments Welcome...</h2>
+
+            <div id="disqus_thread"></div>
+       
+            <script type="text/javascript">
+                // Disqus
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'ouinon';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+
+        {% endif %}
+
+                
+<!-- 
+        <div class="footer-col-wrapper">
+
+            <div class="footer-col  footer-col-3">
+                <p class="text">{{ site.description }}</p>
+            </div> 
+        </div>
+-->
+         
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+        <div id="footer-data">
+
+            <div class="o-tbl SpcC u_clear">
+
+                <div class="tbl Fll c_Clear_">
+                    <div class="cll">
+                        <div class="btn Lft- Icn pdR3r">
+                            <style type="text/css">#info:before{content:'robert';}#info:after{content:'ouinon.co';}</style>
+                            <label><span id="info">&#x0040;</span></label>
+                            <div class="icn">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tbl Flr c_Clear_ m_A Wd100p">
+                    <div class="cll">
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn Icn pdR3r">
+                            <label>LinkedIn</label>
+                            <div class="icn">
+                                <i class="fa fa-linkedin-square fs2r"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cll">
+                        <a href="https://twitter.com/ouinonco" class="btn Icn pdR3r">
+                            <label>Twitter</label>
+                            <div class="icn">
+                                <i class="fa fa-twitter fs2r"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cll">
+                        <a href="" class="btn Icn pdR3r">
+                            <label>Github</label>
+                            <div class="icn">
+                                <i class="fa fa-github-alt fs2r"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mgB2r"></hr>
+            <div class="flR mgL2r">
+                {% include logo-square.svg %}
+            </div>
+            <div class="flL">Northwood - London - 2015</div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script type="text/javascript">
+
+    (function init(){
+
+        window.homeClick = function(elem){
+
+            if(elem.id === 'logo-bar'){
+
+                return window.location = '{{site.url}}';
+
+            };
+
+            return false;
+
+        }
+
+    })();
+
+    angular.module('ouinonApp',[])
+        .value('strUrl','{{site.url}}')
+        .value('strHost','{{site.host}}');
+
+</script>
+<script src="/scripts/ang-c-contact.js"></script>
+<script src="/scripts/ang-d-blanker.js"></script>

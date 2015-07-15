@@ -1,0 +1,69 @@
+---
+layout: default
+permalink: /contact/
+---
+
+{% raw %}
+
+<h1>Contact</h1>
+<form name="contact" ng-controller="FormController"
+    ng-class="
+        {'Name-inv':!contact.name.$valid,
+        'Name-drt':!contact.name.$pristine,
+        'Email-inv':!contact.email.$valid,
+        'Email-drt':!contact.email.$pristine,
+        'Message-inv':!contact.message.$valid,
+        'Message-drt':!contact.message.$pristine
+        }">
+    
+    <p ng-init="messageheader=
+        'Any quick messages can be sent to me here. If it\'s a weekday I always aim to reply within one day of your email. Further contact details are available below the form.'"
+        ng-bind="messageheader"></p>
+
+    <div class="o-tbl">
+        <div class="tbl">
+            <div class="cll">
+                    <o-input class="Icn" name="name" ng-model="user.name" placeholder="Name">
+                        <div class="icn clDrk Name">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            <i class="fa fa-check-square clA"></i>
+                        </div>
+                    </o-input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <o-input name="email" ng-model="user.email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" class="Icn" placeholder="Email (so I can reply)">
+                    <div class="icn clDrk Email">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <i class="fa fa-check-square clA"></i>
+                    </div>
+                </o-input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <o-textarea class="Textarea Icn" name="message" ng-model="user.message" placeholder="Message">
+                    <div class="icn clDrk Message">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <i class="fa fa-check-square clA"></i>
+                    </div>
+                </o-textarea>
+            </div>
+        </div>
+    </div>
+    <div class="o-tbl SpcA">
+        <div class="tbl Flr MgBA- m_ExpA">
+            <div class="cll">
+                <!-- Not using contact.$valid on purpose -->
+              <button type="submit" class="btn Icn clWhite" ng-disabled="!contact.$valid" ng-click="contact.$valid && sendForm(user)">
+                <label ng-init="message='Send Message'" ng-bind="message"></label>
+                <div class="icn">
+                  <i class="fa op1" ng-class="{'fa-envelope':!messagesent,'fa-check':messagesent}"></i>
+                </div>
+              </button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endraw %}

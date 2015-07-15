@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1 class="tag"><a href="/tags/">Tags</a> [<span class="nowrap">{{ page.tag }}</span>]</h1>
+
+<ul class="post-list">
+	{% for post in site.tags[page.tag] %}
+	{% include post-assign.html %}
+		<li>
+
+			<h2 class="clB">
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+			<p class="tag-cte">{{ tags_content }}</p>
+		</li>
+	{% endfor %}
+</ul>
