@@ -13,11 +13,10 @@ We're going to be reproducing this popular infographic, detailing the time it ta
 <div class="o-tbl SpcA">
     <div class="tbl">
         <div class="cll">
-            <a href="http://blog.ouinon.co/how-long-to-watch-01/" class="btn Icn clWhite">
+            <a href="http://blog.ouinon.co/how-long-to-watch-01/" class="btn Icn clWhite" target="_blank">
                 <label>View the Demo</label>
                 <div class="icn">
                     <i class="fa fa-external-link-square"></i>
-                    <!-- <i class="fa fa-square fs2r"></i> -->
                 </div>
             </a>
         </div>
@@ -175,7 +174,6 @@ Continued work on the post will include some interactivity so I'll keep you post
                 <label>View Project on Github</label>
                 <div class="icn">
                     <i class="fa fa-github fs2r"></i>
-                    <!-- <i class="fa fa-square fs2r"></i> -->
                 </div>
             </a>
         </div>
@@ -188,8 +186,8 @@ Continued work on the post will include some interactivity so I'll keep you post
 
 #### SUPPORTING SITES
 
-- http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/
-- http://oli.jp/2011/github-pages-workflow/
-- http://stackoverflow.com/questions/5084100/post-commit-hook-not-running
-- http://jsfiddle.net/63K4n/
-- http://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html
+- [http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/](http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/)
+- [http://oli.jp/2011/github-pages-workflow/](http://oli.jp/2011/github-pages-workflow/)
+- [http://stackoverflow.com/questions/5084100/post-commit-hook-not-running](http://stackoverflow.com/questions/5084100/post-commit-hook-not-running)
+- [http://jsfiddle.net/63K4n/](http://jsfiddle.net/63K4n/)
+- [http://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html](http://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html)
