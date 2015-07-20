@@ -5,7 +5,7 @@ description: > # A blog about front-end web development.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
-host: "blog.ouinon.co" # the base hostname & protocol for your site
+# host: "blog.ouinon.co" # the base hostname & protocol for your site
 url: "http://blog.ouinon.co/" # the base hostname & protocol for your site
 hoststring: "blog.ouinon.co" # the base hostname & protocol for your site
 
