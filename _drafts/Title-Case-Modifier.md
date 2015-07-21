@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Reproducing the 'How Long to Watch' Infographic with D3 PART.01/03"
+date:   2015-07-20 17:52:03
+categories: javascript
+tags: [css]
+---
+
+
 # Title Case Modifier TCM
 
 Described here is a method of working with HTML and class names in an organised way. The goal is similar to that of the [BEM Syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) but goes about the problem in a different way.
