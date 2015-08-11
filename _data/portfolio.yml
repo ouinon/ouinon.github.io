@@ -1,10 +1,16 @@
+- title: Pegr
+  url: http://pegr.ouinon.co/
+  description: > # Pegr is the first project I've published using Node.js alongside Apache
+   The site uses a proxy to connect and use Auth cookies from Cloudant, a CouchDB service.
+   It's purpose is to turn words into numbers with the Mnemonic Major System.
+
 - title: web.cv/RobStarbuck
-  url: http://web.cv/
+  url: http://web.cv/RobStarbuck
   description: > # For the past few months I've been working on my own start-up business.
    Lot's has been learnt, it's honed my AngularJS skills no-end.
 
 - title: Stable Grid
-  url: http://starbuck451.github.io/stablegrid/
+  url: http://ouinon.github.io/stablegrid/
   description: > # Bootstrap's cool but I don't using their 'floating' templates, I built
    Stablegrid as a boilerplate to build web.cv, it relys upon angular-ui for some of it's
    functionality.

@@ -12,7 +12,7 @@ hoststring: "blog.ouinon.co" # the base hostname & protocol for your site
 twitter_link: "https://twitter.com/ouinonco"
 github_link: "https://github.com/ouinon"
 linkedin_link: "https://www.linkedin.com/in/robertstarbuck"
-
+exclude: ['blog-ouinon.sublime-project']
 highlighter: pygments
 
 # Build settings
