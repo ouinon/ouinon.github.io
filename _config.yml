@@ -1,5 +1,5 @@
 # Site settings
-title: OuiNon - 
+title: OuiNon 
 email: robert@ouinon.co
 description: > # A blog about front-end web development.
 baseurl: "" # the subpath of your site, e.g. /blog/

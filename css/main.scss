@@ -7,6 +7,7 @@
 // INCLUDES A COLOR DEFINITION FOR $c_A
 // IT'S A BIT OF A HACK BUT I WANTED TO SEE IF IT WOULD WORK
 {% include sassinclude.scss %}
+
 $c_B:#005689;
 $c_C:#FFAA00;
 
@@ -271,17 +272,17 @@ ul{
 }
 ul.post-list li{
 	margin-bottom: 4rem;
-	a.post-link{
-		text-decoration: none;
-		color:$DK0;
-	    box-shadow: inset 0 -5px 0 0 $A-L4;
-	    transition: box-shadow 1s;
-	    &:hover{
-		    transition: box-shadow 0s;
-		    box-shadow: inset 0 -5px 0 0 $B-L8;
-	    }
-	}
 	position: relative;
+}
+a.post-link{
+	text-decoration: none;
+	color:$DK0;
+    box-shadow: inset 0 -5px 0 0 $A-L4;
+    transition: box-shadow 1s;
+    &:hover{
+	    transition: box-shadow 0s;
+	    box-shadow: inset 0 -5px 0 0 $B-L8;
+    }
 }
 .tag{
 	color:$c_B;

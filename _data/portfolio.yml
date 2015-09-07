@@ -12,7 +12,7 @@
 - title: Stable Grid
   url: http://ouinon.github.io/stablegrid/
   description: > # Bootstrap's cool but I don't using their 'floating' templates, I built
-   Stablegrid as a boilerplate to build web.cv, it relys upon angular-ui for some of it's
+   Stablegrid as a boilerplate to build web.cv, it relies upon angular-ui for some of it's
    functionality.
 
 - title: Facebook - A Connected Life
